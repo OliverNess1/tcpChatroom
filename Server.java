@@ -13,7 +13,7 @@
      try { 
          ServerSocket server = new ServerSocket(port); //make a listening port
          System.out.println("RUNNING");
-         while (true) { //accept clients as long as program is running hi
+         while (true) { //accept clients as long as program is running
              Socket userSock = server.accept(); 
              Client client = new Client(userSock);//make a new client for each user 
              clients.add(client); //add the client to the list of users
